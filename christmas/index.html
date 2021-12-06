@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script id="register-worklet">
+      if (CSS.paintWorklet) {
+        // make sure the URL below matches this codepen URL
+        CSS.paintWorklet.addModule("./xmas-patterns.js");
+      }
+    </script>
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Christmas Patterns</title>
+  </head>
+
+  <body>
+    <h1>Christmas Patterns Testing</h1>
+    <div class="worklet-canvas"></div>
+  </body>
+</html>
