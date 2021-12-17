@@ -34,13 +34,13 @@ body {
   background-color: gold;
 }
 
-.worklet-canvas {
+.tree-canvas {
   z-index: -1;
   width: 75rem;
   height: 65rem;
   margin-left: -4.4rem;
   background-color: rgb(129, 224, 129);
-  background-image: paint(generativePattern);
+  background-image: paint(christmasTree);
   clip-path: polygon(
     53% 2%,
     28% 24%,

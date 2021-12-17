@@ -8,7 +8,7 @@ import random from "https://cdn.skypack.dev/random";
 import seedrandom from "https://cdn.skypack.dev/seedrandom";
 // https://www.skypack.dev/view/seedrandom
 
-class GenerativePattern {
+class ChristmasTree {
   static get inputProperties() {
     return [
       "--pattern-seed",
@@ -89,5 +89,5 @@ class GenerativePattern {
 }
 
 if (typeof registerPaint !== "undefined") {
-  registerPaint("generativePattern", GenerativePattern);
+  registerPaint("christmasTree", ChristmasTree);
 }
