@@ -6,6 +6,20 @@
         // make sure the URL below matches this codepen URL
         CSS.paintWorklet.addModule("./xmas-patterns.js");
       }
+
+      document.documentElement.style.setProperty(
+        "--pattern-seed",
+        Math.random() * 10000
+      );
+
+      document.documentElement.style.setProperty(
+        "--pattern-speck-count",
+        Math.random(1, 100) * 100
+      );
+
+      setTimeout(function () {
+        window.location.reload(1);
+      }, 1000);
     </script>
 
     <link rel="stylesheet" href="./styles.css" />
@@ -14,7 +28,11 @@
   </head>
 
   <body>
-    <h1>Christmas Patterns Testing</h1>
-    <div class="worklet-canvas"></div>
+    <h1 class="happy-holidays">Happy Holidays!</h1>
+    <div class="tree-container">
+      <div class="tree-topper"></div>
+      <div class="worklet-canvas"></div>
+      <div class="tree-trunk"></div>
+    </div>
   </body>
 </html>
