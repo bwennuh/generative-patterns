@@ -2,6 +2,13 @@ body {
   margin: 0;
 }
 
+.happy-holidays {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 .tree-container {
   display: flex;
   flex-flow: column nowrap;
