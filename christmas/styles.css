@@ -2,11 +2,70 @@ body {
   margin: 0;
 }
 
+.tree-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.tree-topper {
+  margin-bottom: -4rem;
+  height: 10rem;
+  width: 10rem;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background-color: gold;
+}
+
 .worklet-canvas {
-  width: 100vw;
-  height: 100vh;
+  z-index: -1;
+  width: 75rem;
+  height: 75rem;
+  margin-left: -4.4rem;
   background-color: rgb(129, 224, 129);
   background-image: paint(generativePattern);
+  clip-path: polygon(
+    53% 2%,
+    28% 24%,
+    42% 20%,
+    21% 48%,
+    38% 43%,
+    11% 76%,
+    37% 71%,
+    30% 79%,
+    54% 75%,
+    76% 80%,
+    69% 71%,
+    92% 76%,
+    67% 43%,
+    83% 48%,
+    63% 20%,
+    77% 25%
+  );
+}
+
+.tree-trunk {
+  z-index: -2;
+  height: 12rem;
+  width: 7.5rem;
+  margin-top: -20rem;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  background-color: brown;
+}
+
+.holiday-button {
+  margin-top: 2rem;
 }
 
 /* Using the CSS Properties and Values API */
