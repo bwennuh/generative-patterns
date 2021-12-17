@@ -1,1 +1,1 @@
-# generative-patterns
+# Making a Christmas Tree with Generative Patterns!
