@@ -3,17 +3,16 @@ body {
 }
 
 .happy-holidays {
-  margin: 0;
-  padding-bottom: 0.5rem;
+  margin: 2rem 1rem 1rem 1rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 .tree-container {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin-top: 2rem;
 }
 
 .tree-topper {
@@ -38,7 +37,7 @@ body {
 .worklet-canvas {
   z-index: -1;
   width: 75rem;
-  height: 75rem;
+  height: 65rem;
   margin-left: -4.4rem;
   background-color: rgb(129, 224, 129);
   background-image: paint(generativePattern);
