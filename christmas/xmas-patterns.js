@@ -37,8 +37,9 @@ class GenerativePattern {
       .getAll("--pattern-colors")
       .map((color) => color.toString());
     const count = props.get("--pattern-speck-count").value;
-    const minSize = props.get("--pattern-speck-min-size").value;
-    const maxSize = props.get("--pattern-speck-max-size").value;
+
+    // const minSize = props.get("--pattern-speck-min-size").value;
+    // const maxSize = props.get("--pattern-speck-max-size").value;
 
     random.use(seedrandom(seed));
 
@@ -51,7 +52,8 @@ class GenerativePattern {
       const yPosition = random.float(0, height);
       // define a Y position for the speck
 
-      const radius = random.float(minSize, maxSize);
+      const radius = 5;
+      // const radius = random.float(minSize, maxSize);
 
       ctx.fillStyle = colors[random.int(0, colors.length - 1)];
 
@@ -68,9 +70,6 @@ class GenerativePattern {
 
       // render the path for speck
       ctx.beginPath();
-
-      // create the shape of the speck - ellipse
-      // ctx.ellipse(xPosition, yPosition, radius, radius / 2, 0, Math.PI * 2, 0);
 
       // create the shape - circle
       ctx.arc(xPosition, yPosition, radius * 5, 0, 2 * Math.PI);
